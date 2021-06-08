@@ -1,0 +1,15 @@
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\bin\Debug\ConsultorioClinico.exe.config
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\bin\Debug\ConsultorioClinico.exe
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\bin\Debug\ConsultorioClinico.pdb
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\bin\Debug\CapaPresentacion.dll
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\bin\Debug\CapaNegocio.dll
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\bin\Debug\CapaDatos.dll
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\bin\Debug\CapaPresentacion.pdb
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\bin\Debug\CapaNegocio.pdb
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\bin\Debug\CapaDatos.pdb
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\obj\Debug\ConsultorioClinico.csprojResolveAssemblyReference.cache
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\obj\Debug\ConsultorioClinico.Form1.resources
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\obj\Debug\ConsultorioClinico.Properties.Resources.resources
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\obj\Debug\ConsultorioClinico.csproj.GenerateResource.Cache
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\obj\Debug\ConsultorioClinico.exe
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\obj\Debug\ConsultorioClinico.pdb

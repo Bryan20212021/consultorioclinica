@@ -1,0 +1,7 @@
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaNegocio\bin\Debug\CapaNegocio.dll
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaNegocio\bin\Debug\CapaNegocio.pdb
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaNegocio\bin\Debug\CapaDatos.dll
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaNegocio\bin\Debug\CapaDatos.pdb
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaNegocio\obj\Debug\CapaNegocio.dll
+c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaNegocio\obj\Debug\CapaNegocio.pdb
