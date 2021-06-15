@@ -96,5 +96,22 @@ namespace CapaNegocio
             Obj.TextoBuscar = textobuscar;
             return Obj.BuscarNum_Documento(Obj);
         }
+
+        public static DataTable BuscarPeso(string textobuscar)
+        {
+            DPacientes Obj = new DPacientes();
+            Obj.TextoBuscar = textobuscar;
+            return Obj.BuscarPeso(Obj);
+        }
+
+        public static DataTable BuscarTalla(string textobuscar)
+        {
+            DPacientes Obj = new DPacientes();
+            Obj.TextoBuscar = textobuscar;
+            return Obj.BuscarTalla(Obj);
+        }
+
+
+
     }
 }

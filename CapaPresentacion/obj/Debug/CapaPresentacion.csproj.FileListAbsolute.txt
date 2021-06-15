@@ -22,3 +22,7 @@ C:\Users\RADA\documents\visual studio 2012\Projects\ConsultorioClinico\CapaPrese
 C:\Users\RADA\documents\visual studio 2012\Projects\ConsultorioClinico\CapaPresentacion\obj\Debug\CapaPresentacion.frmHistoria.resources
 C:\Users\RADA\documents\visual studio 2012\Projects\ConsultorioClinico\CapaPresentacion\obj\Debug\CapaPresentacion.frmSplash.resources
 C:\Users\RADA\documents\visual studio 2012\Projects\ConsultorioClinico\CapaPresentacion\obj\Debug\CapaPresentacion.InicioResumen.resources
+C:\Users\RADA\documents\visual studio 2012\Projects\ConsultorioClinico\CapaPresentacion\bin\Debug\CapaPresentacion.dll.config
+C:\Users\RADA\documents\visual studio 2012\Projects\ConsultorioClinico\CapaPresentacion\obj\Debug\CapaPresentacion.frmReporteRecetas.resources
+C:\Users\RADA\documents\visual studio 2012\Projects\ConsultorioClinico\CapaPresentacion\obj\Debug\RdlCompile.cache
+C:\Users\RADA\documents\visual studio 2012\Projects\ConsultorioClinico\CapaPresentacion\obj\Debug\RdlCompile.compiled

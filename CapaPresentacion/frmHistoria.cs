@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.Data.SqlClient;
+using CapaNegocio;
 
 namespace CapaPresentacion
 {
@@ -80,7 +81,7 @@ namespace CapaPresentacion
 
             this.txtPaciente.Text = string.Empty;
             this.txtCedula.Text = string.Empty;
-            this.txtServicio.Text = string.Empty;
+            //this.txtServicio.Text = string.Empty;
             this.txtMostrarPeso.Text = string.Empty;
             this.txtMostrarTalla.Text = string.Empty;
             this.txtRazonConsulta.Text = string.Empty;
@@ -105,7 +106,7 @@ namespace CapaPresentacion
         {
             this.txtPaciente.ReadOnly = !valor;
             this.txtCedula.ReadOnly = !valor;
-            this.txtServicio.ReadOnly = !valor;
+            //this.txtServicio.ReadOnly = !valor;
             this.txtMostrarPeso.ReadOnly = !valor;
             this.txtMostrarTalla.ReadOnly = !valor;
             this.txtEnfermedadActual.ReadOnly = !valor;
@@ -155,7 +156,7 @@ namespace CapaPresentacion
 
             this.datalistadohistorias.Columns[0].Visible = false;
             //this.dataListado.Columns[1].Visible = false;
-            this.datalistadohistorias.Columns[1].Visible = true;
+            //this.datalistadohistorias.Columns[1].Visible = true;
 
         }
 
@@ -168,7 +169,17 @@ namespace CapaPresentacion
         {
 
 
-            string Cn = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+
+
+
+            this.dataListado.DataSource = NPacientes.Mostrar();
+            this.OcultarColumnas();
+            lblTotal.Text = "Total de Pacientes: " + Convert.ToString(dataListado.Rows.Count);
+
+
+
+
+            /*string Cn = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             SqlConnection conDataBase = new SqlConnection(Cn);
             //SqlCommand cmdDataBase = new SqlCommand("select Cita.idcita, Cita.idpaciente, Paciente.nombre, Usuario.idusuario, Usuario.nombre, Usuario.cargo from Cita inner join Paciente on Cita.idpaciente = Paciente.idpaciente inner join Usuario on Cita.idusuario = Usuario.idusuario ", conDataBase);
             //SqlCommand cmdDataBase = new SqlCommand("select * from Cita where estado = 'Activo'; ", conDataBase);
@@ -201,7 +212,11 @@ namespace CapaPresentacion
 
 
             this.OcultarColumnas();
-            lblTotal.Text = "Total de Citas: " + Convert.ToString(dataListado.Rows.Count);
+            lblTotal.Text = "Total de Citas: " + Convert.ToString(dataListado.Rows.Count);*/
+
+
+
+
         }
 
 
@@ -214,7 +229,7 @@ namespace CapaPresentacion
             SqlConnection conDataBase = new SqlConnection(Cn);
             //SqlCommand cmdDataBase = new SqlCommand("select Cita.idcita, Cita.idpaciente, Paciente.nombre, Usuario.idusuario, Usuario.nombre, Usuario.cargo from Cita inner join Paciente on Cita.idpaciente = Paciente.idpaciente inner join Usuario on Cita.idusuario = Usuario.idusuario ", conDataBase);
             //SqlCommand cmdDataBase = new SqlCommand("select * from Cita where estado = 'Activo'; ", conDataBase);
-            SqlCommand cmdDataBase = new SqlCommand("select Historia.idhistoria, Historia.idcita, Cita.costo, Cita.idpaciente, Paciente.nombre as Paciente, Paciente.tipo_cedula, Paciente.num_cedula,Cita.idservicio, Servicio.nombre AS Servicio, Historia.fecha_consulta, Historia.razon_consulta, Historia.enfermedad_actual, Historia.historia_familiar, Historia.historia_personal, Historia.tratamiento_actual, Historia.examen_fisico, Historia.ecg, Historia.laboratorio, Historia.rayos_x, Historia.ecocardiograma, Historia.plan_estudio, Historia.plan_terapeutico, Historia.estado FROM Cita INNER JOIN Historia ON Cita.idcita = Historia.idcita INNER JOIN Paciente ON Cita.idpaciente = Paciente.idpaciente INNER JOIN Servicio ON Cita.idservicio = Servicio.idservicio where Historia.estado = 'Activo'; ", conDataBase);
+            SqlCommand cmdDataBase = new SqlCommand("select Historia.idhistoria, Historia.idpaciente, Paciente.nombre as Paciente, Paciente.tipo_cedula, Paciente.num_cedula, Historia.fecha_consulta, Historia.razon_consulta, Historia.enfermedad_actual, Historia.historia_familiar, Historia.historia_personal, Historia.tratamiento_actual, Historia.examen_fisico, Historia.ecg, Historia.laboratorio, Historia.rayos_x, Historia.ecocardiograma, Historia.plan_estudio, Historia.plan_terapeutico, Historia.estado FROM Paciente INNER JOIN Historia ON Paciente.idpaciente = Historia.idpaciente where Historia.estado = 'Activo'; ", conDataBase);
 
 
 
@@ -261,7 +276,7 @@ namespace CapaPresentacion
             SqlConnection conDataBase = new SqlConnection(Cn);
             //SqlCommand cmdDataBase = new SqlCommand("select Cita.idcita, Cita.idpaciente, Paciente.nombre, Usuario.idusuario, Usuario.nombre, Usuario.cargo from Cita inner join Paciente on Cita.idpaciente = Paciente.idpaciente inner join Usuario on Cita.idusuario = Usuario.idusuario ", conDataBase);
             //SqlCommand cmdDataBase = new SqlCommand("select * from Cita where estado = 'Activo'; ", conDataBase);
-            SqlCommand cmdDataBase = new SqlCommand("SELECT Historia.idhistoria, Historia.idcita, Cita.costo, Cita.idpaciente, Paciente.nombre as Paciente, Paciente.tipo_cedula, Paciente.num_cedula,Cita.idservicio, Servicio.nombre AS Servicio, Historia.fecha_consulta, Historia.razon_consulta, Historia.enfermedad_actual, Historia.historia_familiar, Historia.historia_personal, Historia.tratamiento_actual, Historia.examen_fisico, Historia.ecg, Historia.laboratorio, Historia.rayos_x, Historia.ecocardiograma, Historia.plan_estudio, Historia.plan_terapeutico, Historia.estado FROM Cita INNER JOIN Historia ON Cita.idcita = Historia.idcita INNER JOIN Paciente ON Cita.idpaciente = Paciente.idpaciente INNER JOIN Servicio ON Cita.idservicio = Servicio.idservicio where Historia.estado = 'Inactivo'; ", conDataBase);
+            SqlCommand cmdDataBase = new SqlCommand("SELECT Historia.idhistoria, Historia.idpaciente, Paciente.nombre as Paciente, Paciente.tipo_cedula, Paciente.num_cedula, Historia.fecha_consulta, Historia.razon_consulta, Historia.enfermedad_actual, Historia.historia_familiar, Historia.historia_personal, Historia.tratamiento_actual, Historia.examen_fisico, Historia.ecg, Historia.laboratorio, Historia.rayos_x, Historia.ecocardiograma, Historia.plan_estudio, Historia.plan_terapeutico, Historia.estado FROM Paciente INNER JOIN Historia ON Paciente.idpaciente = Historia.idpaciente where Historia.estado = 'Inactivo'; ", conDataBase);
 
 
 
@@ -301,7 +316,12 @@ namespace CapaPresentacion
         //Método BuscarNombre
         private void BuscarNombre()
         {
-            DataView DV = new DataView(dbdataset);
+
+            this.dataListado.DataSource = NPacientes.BuscarNombre(this.txtBuscar.Text);
+            this.OcultarColumnas();
+            lblTotal.Text = "Total de Pacientes: " + Convert.ToString(dataListado.Rows.Count);
+            
+            /*DataView DV = new DataView(dbdataset);
             DV.RowFilter = string.Format("Paciente LIKE '%{0}%'", this.txtBuscar.Text);
             dataListado.DataSource = DV;
 
@@ -309,12 +329,12 @@ namespace CapaPresentacion
 
 
 
-            lblTotal.Text = "Total de Citas: " + Convert.ToString(dataListado.Rows.Count);
+            lblTotal.Text = "Total de Citas: " + Convert.ToString(dataListado.Rows.Count);*/
         }
 
 
         //Método BuscarServicio
-        private void BuscarServicio()
+        /*private void BuscarServicio()
         {
             DataView DV = new DataView(dbdataset);
             DV.RowFilter = string.Format("Servicio LIKE '%{0}%'", this.txtBuscar.Text);
@@ -325,41 +345,35 @@ namespace CapaPresentacion
 
 
             lblTotal.Text = "Total de Citas: " + Convert.ToString(dataListado.Rows.Count);
-        }
+        }*/
 
         //Método BuscarTalla
         private void BuscarTalla()
         {
-            DataView DV = new DataView(dbdataset);
-            DV.RowFilter = string.Format("talla LIKE '%{0}%'", this.txtBuscar.Text);
-            dataListado.DataSource = DV;
-
-
-
-
-
-            lblTotal.Text = "Total de Citas: " + Convert.ToString(dataListado.Rows.Count);
+            this.dataListado.DataSource = NPacientes.BuscarTalla(this.txtBuscar.Text);
+            this.OcultarColumnas();
+            lblTotal.Text = "Total de Pacientes: " + Convert.ToString(dataListado.Rows.Count);
         }
 
 
         //Método BuscarPeso
         private void BuscarPeso()
         {
-            DataView DV = new DataView(dbdataset);
-            DV.RowFilter = string.Format("peso LIKE '%{0}%'", this.txtBuscar.Text);
-            dataListado.DataSource = DV;
-
-
-
-
-
-            lblTotal.Text = "Total de Citas: " + Convert.ToString(dataListado.Rows.Count);
+            //this.dataListado.DataSource = NPacientes.BuscarPeso(this.txtBuscar.Text);
+            this.OcultarColumnas();
+            lblTotal.Text = "Total de Pacientes: " + Convert.ToString(dataListado.Rows.Count);
         }
 
         //Método BuscarPeso
         private void BuscarCedula()
         {
-            DataView DV = new DataView(dbdataset);
+
+            this.dataListado.DataSource = NPacientes.BuscarNum_Documento(this.txtBuscar.Text);
+            this.OcultarColumnas();
+
+            lblTotal.Text = "Total de Pacientes: " + Convert.ToString(dataListado.Rows.Count);
+            
+            /*DataView DV = new DataView(dbdataset);
             DV.RowFilter = string.Format("num_cedula LIKE '%{0}%'", this.txtBuscar.Text);
             dataListado.DataSource = DV;
 
@@ -367,7 +381,7 @@ namespace CapaPresentacion
 
 
 
-            lblTotal.Text = "Total de Citas: " + Convert.ToString(dataListado.Rows.Count);
+            lblTotal.Text = "Total de Citas: " + Convert.ToString(dataListado.Rows.Count);*/
         }
 
 
@@ -513,12 +527,12 @@ namespace CapaPresentacion
 
         private void dataListado_DoubleClick(object sender, EventArgs e)
         {
-            this.txtPaciente.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Paciente"].Value);
+            this.txtPaciente.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["nombre"].Value);
             this.lblCodigoPaciente.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["idpaciente"].Value);
-            this.lblCodigoCita.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["idcita"].Value);
+            //this.lblCodigoCita.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["idcita"].Value);
             this.cmbTipoCedula.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["tipo_cedula"].Value);
             this.txtCedula.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["num_cedula"].Value);
-            this.txtServicio.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Servicio"].Value);
+            //this.txtServicio.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Servicio"].Value);
             this.txtMostrarPeso.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["peso"].Value);
             this.txtMostrarTalla.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["talla"].Value);
         }
@@ -534,7 +548,7 @@ namespace CapaPresentacion
             }
             else if (this.cblBusqueda.Text.Equals("Servicio"))
             {
-                this.BuscarServicio();
+                //this.BuscarServicio();
             }
 
             else if (this.cblBusqueda.Text.Equals("Talla"))
@@ -564,7 +578,7 @@ namespace CapaPresentacion
             }
             else if (this.cblBusqueda.Text.Equals("Servicio"))
             {
-                this.BuscarServicio();
+                //this.BuscarServicio();
             }
 
             else if (this.cblBusqueda.Text.Equals("Talla"))
@@ -600,7 +614,7 @@ namespace CapaPresentacion
             try
             {
                 string rpta = "";
-                if (this.txtPaciente.Text == string.Empty)
+                if (this.lblCodigoPaciente.Text == string.Empty)
                 {
                     MessageBox.Show("No puede dejar campos vacios o sin seleccionar. ", "Campos Vacios", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -625,13 +639,13 @@ namespace CapaPresentacion
                         //Establecer el Comando
                         SqlCommand SqlCmd = new SqlCommand();
                         SqlCmd.Connection = SqlCon;
-                        SqlCmd.CommandText = "insert into Historia (idcita, fecha_consulta, razon_consulta, enfermedad_actual, historia_familiar, historia_personal, tratamiento_actual, examen_fisico, laboratorio, ecg, rayos_x, ecocardiograma, plan_estudio, plan_terapeutico, estado) values (@d1,@d2,@d3,@d4,@d5,@d6,@d7,@d8,@d9,@d10,@d11,@d12,@d13,@d14,@d15);";
+                        SqlCmd.CommandText = "insert into Historia (idpaciente, fecha_consulta, razon_consulta, enfermedad_actual, historia_familiar, historia_personal, tratamiento_actual, examen_fisico, laboratorio, ecg, rayos_x, ecocardiograma, plan_estudio, plan_terapeutico, estado) values (@d1,@d2,@d3,@d4,@d5,@d6,@d7,@d8,@d9,@d10,@d11,@d12,@d13,@d14,@d15);";
                         //SqlCmd.CommandType = CommandType.StoredProcedure;
 
 
 
                         //Sqlcmd.Parameters.AddWithValue("@d1", txtNombreCliente.Text);
-                        SqlCmd.Parameters.AddWithValue("@d1", this.lblCodigoCita.Text);
+                        SqlCmd.Parameters.AddWithValue("@d1", this.lblCodigoPaciente.Text);
                         SqlCmd.Parameters.AddWithValue("@d2", this.dtpFechaConsulta.Text);
                         SqlCmd.Parameters.AddWithValue("@d3", this.txtRazonConsulta.Text);
                         SqlCmd.Parameters.AddWithValue("@d4", this.txtEnfermedadActual.Text);
@@ -672,13 +686,13 @@ namespace CapaPresentacion
                         //Establecer el Comando
                         SqlCommand SqlCmd = new SqlCommand();
                         SqlCmd.Connection = SqlCon;
-                        SqlCmd.CommandText = "update Historia set idcita = @d1, fecha_consulta = @d2, razon_consulta = @d3, enfermedad_actual = @d4, historia_familiar = @d5, historia_personal = @d6, tratamiento_actual = @d7, examen_fisico = @d8, laboratorio = @d9, ecg = @d10, rayos_x = @d11, ecocardiograma = @d12, plan_estudio = @d13, plan_terapeutico = @d14, estado = @d15 where idhistoria=@d15";
+                        SqlCmd.CommandText = "update Historia set idpaciente = @d1, fecha_consulta = @d2, razon_consulta = @d3, enfermedad_actual = @d4, historia_familiar = @d5, historia_personal = @d6, tratamiento_actual = @d7, examen_fisico = @d8, laboratorio = @d9, ecg = @d10, rayos_x = @d11, ecocardiograma = @d12, plan_estudio = @d13, plan_terapeutico = @d14, estado = @d15 where idhistoria=@d16";
                         //SqlCmd.CommandType = CommandType.StoredProcedure;
 
 
 
                         //Sqlcmd.Parameters.AddWithValue("@d1", txtNombreCliente.Text);
-                        SqlCmd.Parameters.AddWithValue("@d1", this.lblCodigoCita.Text);
+                        SqlCmd.Parameters.AddWithValue("@d1", this.lblCodigoPaciente.Text);
                         SqlCmd.Parameters.AddWithValue("@d2", this.dtpFechaConsulta.Text);
                         SqlCmd.Parameters.AddWithValue("@d3", this.txtRazonConsulta.Text);
                         SqlCmd.Parameters.AddWithValue("@d4", this.txtEnfermedadActual.Text);
@@ -692,7 +706,8 @@ namespace CapaPresentacion
                         SqlCmd.Parameters.AddWithValue("@d12", this.txtEcocardiograma.Text);
                         SqlCmd.Parameters.AddWithValue("@d13", this.txtPlanEstudio.Text);
                         SqlCmd.Parameters.AddWithValue("@d14", this.txtTerapeutico.Text);
-                        SqlCmd.Parameters.AddWithValue("@d15", this.lblCodigoHistoria.Text);
+                        SqlCmd.Parameters.AddWithValue("@d15", this.cmbEstadoHistoria.Text);
+                        SqlCmd.Parameters.AddWithValue("@d16", this.lblCodigoHistoria.Text);
 
 
 
@@ -786,6 +801,7 @@ namespace CapaPresentacion
         private void datalistadohistorias_DoubleClick(object sender, EventArgs e)
         {
             this.lblCodigoHistoria.Text = Convert.ToString(this.datalistadohistorias.CurrentRow.Cells["idhistoria"].Value);
+            this.lblCodigoPaciente.Text = Convert.ToString(this.datalistadohistorias.CurrentRow.Cells["idpaciente"].Value);
             this.dtpFechaConsulta.Text = Convert.ToString(this.datalistadohistorias.CurrentRow.Cells["fecha_consulta"].Value);
             this.txtRazonConsulta.Text = Convert.ToString(this.datalistadohistorias.CurrentRow.Cells["razon_consulta"].Value);
             this.txtEnfermedadActual.Text = Convert.ToString(this.datalistadohistorias.CurrentRow.Cells["enfermedad_actual"].Value);
@@ -1009,6 +1025,16 @@ namespace CapaPresentacion
 
 
 
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
 
         }
 

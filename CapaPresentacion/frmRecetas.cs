@@ -613,6 +613,13 @@ namespace CapaPresentacion
             }
         }
 
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            frmReporteRecetas frm = new frmReporteRecetas();
+            frm.Idreceta = Convert.ToInt32(this.dataListado.CurrentRow.Cells["idreceta"].Value);
+            frm.ShowDialog();
+        }
+
 
 
 

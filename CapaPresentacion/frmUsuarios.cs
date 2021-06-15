@@ -189,6 +189,13 @@ namespace CapaPresentacion
                 {
                     MensajeError("No se pueden dejar campos vacios");
 
+
+                    if (this.validarExisteUsuario(this.txtLogin.Text) == true)
+                    {
+
+                        MensajeError("Hay un usuario con este nombre. Intente con otro.");
+                    }
+
                 }
                 else
                 {
@@ -301,6 +308,49 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+        }
+
+
+        public bool validarExisteUsuario(string login)
+        {
+            bool resultado = false;
+
+
+            SqlConnection SqlCon = new SqlConnection();
+
+            SqlDataReader dr;
+
+            //Código
+            SqlCon.ConnectionString = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            SqlCon.Open();
+            //Establecer el Comando
+            SqlCommand SqlCmd = new SqlCommand("select * from Usuario where login ='" + login + "' and estado = 'Activo'");
+            SqlCmd.Connection = SqlCon;
+
+            //SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+            try
+            {
+
+                dr = SqlCmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    resultado = true;
+
+                }
+
+                dr.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ha ocurrido un error.", ex.Message);
+            }
+
+            return resultado;
+
         }
 
         private void btnEditar_Click(object sender, EventArgs e)

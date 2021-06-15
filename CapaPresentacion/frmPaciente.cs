@@ -23,6 +23,11 @@ namespace CapaPresentacion
 
         public DataTable dbdataset;
 
+        
+       
+        SqlDataReader dr;
+        
+
       
 
         public frmPaciente()
@@ -191,6 +196,9 @@ namespace CapaPresentacion
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+
+           
+
             try
             {
                 string rpta = "";
@@ -204,7 +212,20 @@ namespace CapaPresentacion
                     errorIcono.SetError(txtUsuario, "Ingrese un Valor");
                     errorIcono.SetError(txtPassword, "Ingrese un Valor");*/
 
+                  
+
+
+
                 }
+
+
+                if (this.validarExistePaciente(this.txtNumero_Documento.Text) == true)
+                {
+
+                    MensajeError("Hay un paciente con este numero de cedula.");
+                }
+
+
 
 
 
@@ -282,6 +303,49 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+        }
+
+
+        public bool validarExistePaciente(string ci)
+        {
+            bool resultado = false;
+
+
+            SqlConnection SqlCon = new SqlConnection();
+
+
+
+            //Código
+            SqlCon.ConnectionString = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            SqlCon.Open();
+            //Establecer el Comando
+            SqlCommand SqlCmd = new SqlCommand("select * from Paciente where num_cedula ='" + ci + "' ");
+            SqlCmd.Connection = SqlCon;
+            
+            //SqlCmd.CommandType = CommandType.StoredProcedure;
+            
+
+            try
+            {
+                
+                dr = SqlCmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    resultado = true;
+
+                }
+
+                dr.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ha ocurrido un error.", ex.Message);
+            }
+
+            return resultado;
+
         }
 
         private void btnEditar_Click(object sender, EventArgs e)

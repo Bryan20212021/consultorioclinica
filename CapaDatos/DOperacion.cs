@@ -81,7 +81,7 @@ namespace CapaDatos
                 //Establecer el Comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "sp_insertar_operacion";
+                SqlCmd.CommandText = "spinsertar_operacion";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ParIdoperacion = new SqlParameter();

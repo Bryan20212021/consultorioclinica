@@ -55,5 +55,10 @@ namespace CapaPresentacion
             lblCantidadOperaciones.Text = "Total de Operaciones: " + Convert.ToString(datalistadoOperaciones.Rows.Count);
 
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
