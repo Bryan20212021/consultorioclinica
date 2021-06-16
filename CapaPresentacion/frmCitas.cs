@@ -57,7 +57,7 @@ namespace CapaPresentacion
         {
 
 
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select * from Servicio where estado = 'Activo' ;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
@@ -94,7 +94,7 @@ namespace CapaPresentacion
         {
 
 
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select * from Usuario where estado = 'Activo' ;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
@@ -165,7 +165,7 @@ namespace CapaPresentacion
         {
 
 
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select * from Paciente where estado = 'Activo' ;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
@@ -295,7 +295,7 @@ namespace CapaPresentacion
         {
 
 
-            string Cn = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string Cn = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             SqlConnection conDataBase = new SqlConnection(Cn);
             //SqlCommand cmdDataBase = new SqlCommand("select Cita.idcita, Cita.idpaciente, Paciente.nombre, Usuario.idusuario, Usuario.nombre, Usuario.cargo from Cita inner join Paciente on Cita.idpaciente = Paciente.idpaciente inner join Usuario on Cita.idusuario = Usuario.idusuario ", conDataBase);
             //SqlCommand cmdDataBase = new SqlCommand("select * from Cita where estado = 'Activo'; ", conDataBase);
@@ -372,7 +372,7 @@ namespace CapaPresentacion
 
 
                         //Código
-                        SqlCon.ConnectionString = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+                        SqlCon.ConnectionString = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
                         SqlCon.Open();
                         //Establecer el Comando
                         SqlCommand SqlCmd = new SqlCommand();
@@ -418,7 +418,7 @@ namespace CapaPresentacion
 
 
                         //Código
-                        SqlCon.ConnectionString = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+                        SqlCon.ConnectionString = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
                         SqlCon.Open();
                         //Establecer el Comando
                         SqlCommand SqlCmd = new SqlCommand();
@@ -543,7 +543,7 @@ namespace CapaPresentacion
 
         private void cmbPacientes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select * from Paciente where nombre = '" + this.cmbPacientes.Text + "' ;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
@@ -579,7 +579,7 @@ namespace CapaPresentacion
 
         private void cmbServicios_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select * from Servicio where nombre = '" + this.cmbServicios.Text + "' ;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
@@ -642,7 +642,7 @@ namespace CapaPresentacion
 
 
                             //Código
-                            SqlCon.ConnectionString = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+                            SqlCon.ConnectionString = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
                             SqlCon.Open();
                             //Establecer el Comando
                             SqlCommand SqlCmd = new SqlCommand();
@@ -705,7 +705,7 @@ namespace CapaPresentacion
 
 
 
-            SqlCon2.ConnectionString = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            SqlCon2.ConnectionString = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             SqlCon2.Open();
 
             SqlCommand SqlCmd2 = new SqlCommand();
@@ -747,7 +747,7 @@ namespace CapaPresentacion
 
 
 
-            SqlCon2.ConnectionString = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            SqlCon2.ConnectionString = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             SqlCon2.Open();
 
             SqlCommand SqlCmd2 = new SqlCommand();
@@ -789,7 +789,7 @@ namespace CapaPresentacion
 
 
 
-            SqlCon2.ConnectionString = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            SqlCon2.ConnectionString = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             SqlCon2.Open();
 
             SqlCommand SqlCmd2 = new SqlCommand();
@@ -854,7 +854,7 @@ namespace CapaPresentacion
 
         private void cmbUsuarios_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select * from Usuario where nombre = '" + this.cmbUsuarios.Text + "' ;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);

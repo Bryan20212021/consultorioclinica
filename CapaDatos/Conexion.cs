@@ -13,7 +13,7 @@ namespace CapaDatos
     {
 
 
-        public static string Cn = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+        public static string Cn = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
 
 
     }

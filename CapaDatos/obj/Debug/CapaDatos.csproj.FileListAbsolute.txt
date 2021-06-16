@@ -3,3 +3,8 @@ c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaDatos
 c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaDatos\obj\Debug\CapaDatos.dll
 c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\consultorioclinica\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\consultorioclinica\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\consultorioclinica\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\consultorioclinica\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\consultorioclinica\CapaDatos\obj\Debug\CapaDatos.pdb

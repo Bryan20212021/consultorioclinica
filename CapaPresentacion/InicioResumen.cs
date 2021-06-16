@@ -37,7 +37,7 @@ namespace CapaPresentacion
         public void cantidadpacientes()
         {
 
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select count(*) AS Cantidad from Paciente where estado = 'Activo' ;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
@@ -71,7 +71,7 @@ namespace CapaPresentacion
         public void cantidadusuarios()
         {
 
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select count(*) AS Cantidad from Usuario where estado = 'Activo' ;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
@@ -106,7 +106,7 @@ namespace CapaPresentacion
         public void cantidadcitas()
         {
 
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select count(*) AS Cantidad from Cita where estado = 'Activo' ;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
@@ -141,7 +141,7 @@ namespace CapaPresentacion
         public void cantidadhistorias()
         {
 
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select count(*) AS Cantidad from Historia where estado = 'Activo' ;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
@@ -176,7 +176,7 @@ namespace CapaPresentacion
         public void cantidaddiagnosticos()
         {
 
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select count(*) AS Cantidad from Diagnostico;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
@@ -212,7 +212,7 @@ namespace CapaPresentacion
         public void cantidadservicios()
         {
 
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select count(*) AS Cantidad from Servicio;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
@@ -247,7 +247,7 @@ namespace CapaPresentacion
         public void cantidadrecetas()
         {
 
-            string CN = "Data Source=DESKTOP-O96G4O5\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select count(*) AS Cantidad from Receta;";
             SqlConnection conDataBase = new SqlConnection(CN);
             SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);

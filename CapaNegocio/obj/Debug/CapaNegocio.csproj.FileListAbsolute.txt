@@ -5,3 +5,11 @@ c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaNegoc
 c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaNegocio\obj\Debug\CapaNegocio.dll
 c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\consultorioclinica\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\consultorioclinica\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\consultorioclinica\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\consultorioclinica\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\consultorioclinica\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\consultorioclinica\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Usuario\Desktop\consultorioclinica\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\consultorioclinica\CapaNegocio\obj\Debug\CapaNegocio.pdb

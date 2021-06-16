@@ -13,3 +13,24 @@ c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\Consultor
 c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\obj\Debug\ConsultorioClinico.csproj.GenerateResource.Cache
 c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\obj\Debug\ConsultorioClinico.exe
 c:\users\rada\documents\visual studio 2012\Projects\ConsultorioClinico\ConsultorioClinico\obj\Debug\ConsultorioClinico.pdb
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\ConsultorioClinico.exe.config
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\ConsultorioClinico.exe
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\ConsultorioClinico.pdb
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\CapaPresentacion.dll
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\CapaPresentacion.pdb
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\CapaPresentacion.dll.config
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\obj\Debug\ConsultorioClinico.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\obj\Debug\ConsultorioClinico.Form1.resources
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\obj\Debug\ConsultorioClinico.Properties.Resources.resources
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\obj\Debug\ConsultorioClinico.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\obj\Debug\ConsultorioClinico.csproj.CopyComplete
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\obj\Debug\ConsultorioClinico.exe
+C:\Users\Usuario\Desktop\consultorioclinica\ConsultorioClinico\obj\Debug\ConsultorioClinico.pdb
