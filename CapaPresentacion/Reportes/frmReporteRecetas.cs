@@ -21,7 +21,6 @@ namespace CapaPresentacion
         }
 
         
-
         public frmReporteRecetas()
         {
             InitializeComponent();
@@ -29,6 +28,7 @@ namespace CapaPresentacion
 
         private void frmReporteRecetas_Load(object sender, EventArgs e)
         {
+
             // TODO: esta línea de código carga datos en la tabla 'dsReceta.spreporte_receta' Puede moverla o quitarla según sea necesario.
             this.spreporte_recetaTableAdapter.Fill(this.dsReceta.spreporte_receta, _Idreceta);
 

@@ -44,6 +44,7 @@
     <Compile Include="DDiagnostico.cs" />
     <Compile Include="DOperacion.cs" />
     <Compile Include="DPacientes.cs" />
+    <Compile Include="DPlanEstudio.cs" />
     <Compile Include="DReceta.cs" />
     <Compile Include="DServicio.cs" />
     <Compile Include="DUsuario.cs" />

@@ -106,9 +106,13 @@ namespace CapaPresentacion
                     this.Hide();
 
                 }
-                else
+                else if (count == 0)
                 {
                     MessageBox.Show("Datos Invalidos", "Consultorio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("ERROR, quizas exista un registro con datos iguales, contacte al administrador");
                 }
 
 

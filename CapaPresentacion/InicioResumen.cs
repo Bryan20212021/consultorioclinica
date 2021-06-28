@@ -283,5 +283,6 @@ namespace CapaPresentacion
             lblhora.Text = DateTime.Now.ToString("hh:mm:ss ");
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
+
     }
 }

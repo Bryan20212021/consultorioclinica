@@ -46,6 +46,7 @@
             this.btnminimizar = new System.Windows.Forms.PictureBox();
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
@@ -59,9 +60,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(395, 48);
+            this.label4.Location = new System.Drawing.Point(527, 59);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(230, 31);
+            this.label4.Size = new System.Drawing.Size(281, 37);
             this.label4.TabIndex = 111;
             this.label4.Text = "Ingreso al sistema";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -71,10 +73,9 @@
             this.LblHora.AutoSize = true;
             this.LblHora.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
             this.LblHora.ForeColor = System.Drawing.Color.DarkCyan;
-            this.LblHora.Location = new System.Drawing.Point(309, 118);
-            this.LblHora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblHora.Location = new System.Drawing.Point(412, 145);
             this.LblHora.Name = "LblHora";
-            this.LblHora.Size = new System.Drawing.Size(60, 25);
+            this.LblHora.Size = new System.Drawing.Size(75, 32);
             this.LblHora.TabIndex = 110;
             this.LblHora.Text = "label4";
             // 
@@ -87,9 +88,10 @@
             this.BtnSalir.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
             this.BtnSalir.ForeColor = System.Drawing.Color.White;
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.Location = new System.Drawing.Point(542, 292);
+            this.BtnSalir.Location = new System.Drawing.Point(723, 359);
+            this.BtnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(178, 35);
+            this.BtnSalir.Size = new System.Drawing.Size(237, 43);
             this.BtnSalir.TabIndex = 109;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = false;
@@ -100,9 +102,10 @@
             this.chkRevelarClave.AutoSize = true;
             this.chkRevelarClave.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
             this.chkRevelarClave.ForeColor = System.Drawing.Color.DarkCyan;
-            this.chkRevelarClave.Location = new System.Drawing.Point(312, 364);
+            this.chkRevelarClave.Location = new System.Drawing.Point(416, 448);
+            this.chkRevelarClave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkRevelarClave.Name = "chkRevelarClave";
-            this.chkRevelarClave.Size = new System.Drawing.Size(139, 29);
+            this.chkRevelarClave.Size = new System.Drawing.Size(172, 36);
             this.chkRevelarClave.TabIndex = 108;
             this.chkRevelarClave.Text = "Revelar Clave";
             this.chkRevelarClave.UseVisualStyleBackColor = true;
@@ -117,9 +120,10 @@
             this.btnlogin.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
             this.btnlogin.ForeColor = System.Drawing.Color.White;
             this.btnlogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnlogin.Location = new System.Drawing.Point(312, 292);
+            this.btnlogin.Location = new System.Drawing.Point(416, 359);
+            this.btnlogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(224, 35);
+            this.btnlogin.Size = new System.Drawing.Size(299, 43);
             this.btnlogin.TabIndex = 107;
             this.btnlogin.Text = "Acceder";
             this.btnlogin.UseVisualStyleBackColor = false;
@@ -131,9 +135,10 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.Location = new System.Drawing.Point(312, 233);
+            this.txtPassword.Location = new System.Drawing.Point(416, 287);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(408, 27);
+            this.txtPassword.Size = new System.Drawing.Size(543, 32);
             this.txtPassword.TabIndex = 104;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -143,9 +148,10 @@
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.Black;
-            this.txtUsuario.Location = new System.Drawing.Point(312, 168);
+            this.txtUsuario.Location = new System.Drawing.Point(416, 207);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(408, 27);
+            this.txtUsuario.Size = new System.Drawing.Size(543, 32);
             this.txtUsuario.TabIndex = 103;
             // 
             // panel1
@@ -154,29 +160,33 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 476);
+            this.panel1.Size = new System.Drawing.Size(333, 586);
             this.panel1.TabIndex = 102;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(250, 476);
+            this.panel3.Size = new System.Drawing.Size(333, 586);
             this.panel3.TabIndex = 100;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(21, 17);
+            this.label2.Location = new System.Drawing.Point(28, 21);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 49);
+            this.label2.Size = new System.Drawing.Size(267, 60);
             this.label2.TabIndex = 7;
             this.label2.Text = "Sistema de Historias Clínicas Electrónicas";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -185,9 +195,10 @@
             // 
             this.label3.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(-76, 75);
+            this.label3.Location = new System.Drawing.Point(-100, 108);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(390, 77);
+            this.label3.Size = new System.Drawing.Size(520, 95);
             this.label3.TabIndex = 6;
             this.label3.Text = "Crystal Clear";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,9 +220,10 @@
             this.btnminimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnminimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnminimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimizar.Image")));
-            this.btnminimizar.Location = new System.Drawing.Point(751, 13);
+            this.btnminimizar.Location = new System.Drawing.Point(1001, 16);
+            this.btnminimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnminimizar.Name = "btnminimizar";
-            this.btnminimizar.Size = new System.Drawing.Size(18, 18);
+            this.btnminimizar.Size = new System.Drawing.Size(24, 22);
             this.btnminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnminimizar.TabIndex = 106;
             this.btnminimizar.TabStop = false;
@@ -222,9 +234,10 @@
             this.btncerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btncerrar.Image")));
-            this.btncerrar.Location = new System.Drawing.Point(775, 13);
+            this.btncerrar.Location = new System.Drawing.Point(1033, 16);
+            this.btncerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(18, 18);
+            this.btncerrar.Size = new System.Drawing.Size(24, 22);
             this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btncerrar.TabIndex = 105;
             this.btncerrar.TabStop = false;
@@ -232,21 +245,33 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.Imagen_Medico;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 170);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 180);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(192, 243);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(333, 327);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(38, 479);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(267, 60);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Dr. Félix Montaño";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 476);
+            this.ClientSize = new System.Drawing.Size(1067, 586);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.LblHora);
             this.Controls.Add(this.BtnSalir);
@@ -258,7 +283,9 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
@@ -284,10 +311,11 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

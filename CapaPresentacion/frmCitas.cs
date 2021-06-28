@@ -93,7 +93,6 @@ namespace CapaPresentacion
         public void fillComboUsuarios()
         {
 
-
             string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
             string Query = "select * from Usuario where estado = 'Activo' ;";
             SqlConnection conDataBase = new SqlConnection(CN);

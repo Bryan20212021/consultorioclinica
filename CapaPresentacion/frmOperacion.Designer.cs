@@ -28,15 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.datalistadoOperaciones = new System.Windows.Forms.DataGridView();
             this.lblCantidadOperaciones = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblNombreUsuario = new System.Windows.Forms.Label();
+            this.cblBusqueda = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistadoOperaciones)).BeginInit();
             this.SuspendLayout();
@@ -48,8 +54,9 @@
             this.panel3.Controls.Add(this.label13);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1077, 64);
+            this.panel3.Size = new System.Drawing.Size(1436, 79);
             this.panel3.TabIndex = 154;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -57,9 +64,10 @@
             // 
             this.label12.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(308, 9);
+            this.label12.Location = new System.Drawing.Point(411, 11);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(389, 49);
+            this.label12.Size = new System.Drawing.Size(519, 60);
             this.label12.TabIndex = 7;
             this.label12.Text = "Historial De Operaciones";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -68,9 +76,10 @@
             // 
             this.label13.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(27, 39);
+            this.label13.Location = new System.Drawing.Point(36, 48);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(390, 77);
+            this.label13.Size = new System.Drawing.Size(520, 95);
             this.label13.TabIndex = 6;
             this.label13.Text = "Crystal Clear";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -82,45 +91,46 @@
             this.datalistadoOperaciones.AllowUserToOrderColumns = true;
             this.datalistadoOperaciones.BackgroundColor = System.Drawing.Color.White;
             this.datalistadoOperaciones.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datalistadoOperaciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datalistadoOperaciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.datalistadoOperaciones.ColumnHeadersHeight = 50;
             this.datalistadoOperaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datalistadoOperaciones.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datalistadoOperaciones.DefaultCellStyle = dataGridViewCellStyle30;
             this.datalistadoOperaciones.GridColor = System.Drawing.Color.DarkCyan;
-            this.datalistadoOperaciones.Location = new System.Drawing.Point(291, 184);
-            this.datalistadoOperaciones.Margin = new System.Windows.Forms.Padding(2);
+            this.datalistadoOperaciones.Location = new System.Drawing.Point(354, 209);
+            this.datalistadoOperaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datalistadoOperaciones.MultiSelect = false;
             this.datalistadoOperaciones.Name = "datalistadoOperaciones";
             this.datalistadoOperaciones.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datalistadoOperaciones.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.datalistadoOperaciones.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datalistadoOperaciones.RowHeadersDefaultCellStyle = dataGridViewCellStyle31;
+            this.datalistadoOperaciones.RowHeadersWidth = 51;
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.White;
+            this.datalistadoOperaciones.RowsDefaultCellStyle = dataGridViewCellStyle32;
             this.datalistadoOperaciones.RowTemplate.Height = 24;
             this.datalistadoOperaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datalistadoOperaciones.Size = new System.Drawing.Size(525, 414);
+            this.datalistadoOperaciones.Size = new System.Drawing.Size(700, 510);
             this.datalistadoOperaciones.TabIndex = 153;
             // 
             // lblCantidadOperaciones
@@ -128,22 +138,99 @@
             this.lblCantidadOperaciones.AutoSize = true;
             this.lblCantidadOperaciones.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
             this.lblCantidadOperaciones.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lblCantidadOperaciones.Location = new System.Drawing.Point(527, 134);
-            this.lblCantidadOperaciones.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCantidadOperaciones.Location = new System.Drawing.Point(979, 175);
             this.lblCantidadOperaciones.Name = "lblCantidadOperaciones";
-            this.lblCantidadOperaciones.Size = new System.Drawing.Size(60, 25);
+            this.lblCantidadOperaciones.Size = new System.Drawing.Size(75, 32);
             this.lblCantidadOperaciones.TabIndex = 152;
             this.lblCantidadOperaciones.Text = "label4";
             // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
+            this.lblFecha.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lblFecha.Location = new System.Drawing.Point(25, 292);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(79, 32);
+            this.lblFecha.TabIndex = 167;
+            this.lblFecha.Text = "Fecha:";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombre.Location = new System.Drawing.Point(31, 268);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(275, 22);
+            this.txtNombre.TabIndex = 175;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            // 
+            // lblNombreUsuario
+            // 
+            this.lblNombreUsuario.AutoSize = true;
+            this.lblNombreUsuario.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
+            this.lblNombreUsuario.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lblNombreUsuario.Location = new System.Drawing.Point(25, 234);
+            this.lblNombreUsuario.Name = "lblNombreUsuario";
+            this.lblNombreUsuario.Size = new System.Drawing.Size(218, 32);
+            this.lblNombreUsuario.TabIndex = 174;
+            this.lblNombreUsuario.Text = "Nombre de Usuario:";
+            // 
+            // cblBusqueda
+            // 
+            this.cblBusqueda.BackColor = System.Drawing.SystemColors.Control;
+            this.cblBusqueda.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
+            this.cblBusqueda.ForeColor = System.Drawing.Color.DarkCyan;
+            this.cblBusqueda.FormattingEnabled = true;
+            this.cblBusqueda.Items.AddRange(new object[] {
+            "Nombre",
+            "Fecha"});
+            this.cblBusqueda.Location = new System.Drawing.Point(31, 167);
+            this.cblBusqueda.Margin = new System.Windows.Forms.Padding(4);
+            this.cblBusqueda.Name = "cblBusqueda";
+            this.cblBusqueda.Size = new System.Drawing.Size(160, 40);
+            this.cblBusqueda.TabIndex = 195;
+            this.cblBusqueda.Text = "Nombre";
+            this.cblBusqueda.SelectedIndexChanged += new System.EventHandler(this.cblBusqueda_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
+            this.label2.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label2.Location = new System.Drawing.Point(25, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(153, 32);
+            this.label2.TabIndex = 196;
+            this.label2.Text = "Buscar según:";
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.CustomFormat = "d/M/yyyy";
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFecha.Location = new System.Drawing.Point(31, 327);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(275, 22);
+            this.dtpFecha.TabIndex = 197;
+            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
+            // 
             // frmOperacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1077, 703);
+            this.ClientSize = new System.Drawing.Size(1436, 865);
+            this.Controls.Add(this.dtpFecha);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cblBusqueda);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.lblNombreUsuario);
+            this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.datalistadoOperaciones);
             this.Controls.Add(this.lblCantidadOperaciones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmOperacion";
             this.Text = "frmOperacion";
             this.Load += new System.EventHandler(this.frmOperacion_Load);
@@ -161,5 +248,11 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DataGridView datalistadoOperaciones;
         private System.Windows.Forms.Label lblCantidadOperaciones;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblNombreUsuario;
+        private System.Windows.Forms.ComboBox cblBusqueda;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
     }
 }

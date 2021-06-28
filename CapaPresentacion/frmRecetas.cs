@@ -30,6 +30,8 @@ namespace CapaPresentacion
 
             LlenarComboPacientes();
 
+            this.cmbPacientes.SelectedIndex = -1;
+
             this.ttMensaje.SetToolTip(this.cmbPacientes, "Seleccione el paciente");
 
             this.ttMensaje.SetToolTip(this.txtMedicamento, "Ingrese el medicamento");
@@ -180,9 +182,11 @@ namespace CapaPresentacion
 
         private void LlenarComboPacientes()
         {
+
             this.cmbPacientes.DataSource = NPacientes.Mostrar();
             cmbPacientes.ValueMember = "idpaciente";
             cmbPacientes.DisplayMember = "nombre";
+
 
         }
 
@@ -202,7 +206,7 @@ namespace CapaPresentacion
             {
                 string rpta = "";
                 if (this.txtMedicamento.Text == string.Empty || this.txtPresentacion.Text == string.Empty || this.txtDuracion.Text == string.Empty || this.txtDosis.Text == string.Empty || this.txtCantidad.Text == string.Empty ||
-                    string.IsNullOrEmpty(lblCodigoPaciente.Text) || this.cmbPacientes.SelectedIndex == -1)
+                    string.IsNullOrEmpty(lblCodPac.Text) || this.cmbPacientes.SelectedIndex == -1)
                 {
                     MensajeError("No se pueden dejar campos vacios");
 
@@ -216,7 +220,7 @@ namespace CapaPresentacion
                     {
 
 
-                        rpta = NReceta.Insertar(Convert.ToInt32(this.lblCodigoPaciente.Text), this.txtMedicamento.Text.Trim().ToUpper(), this.txtPresentacion.Text.Trim().ToUpper(), this.txtDosis.Text.Trim().ToUpper(), this.txtDuracion.Text.Trim().ToUpper(), Convert.ToInt32(this.txtCantidad.Text));
+                        rpta = NReceta.Insertar(Convert.ToInt32(this.lblCodPac.Text), this.txtMedicamento.Text.Trim().ToUpper(), this.txtPresentacion.Text.Trim().ToUpper(), this.txtDosis.Text.Trim().ToUpper(), this.txtDuracion.Text.Trim().ToUpper(), Convert.ToInt32(this.txtCantidad.Text));
 
 
 
@@ -263,7 +267,7 @@ namespace CapaPresentacion
 
 
 
-                        rpta = NReceta.Editar(Convert.ToInt32(this.txtidReceta.Text), Convert.ToInt32(this.lblCodigoPaciente.Text), this.txtMedicamento.Text.Trim().ToUpper(), this.txtPresentacion.Text.Trim().ToUpper(), this.txtDosis.Text.Trim().ToUpper(), this.txtDuracion.Text.Trim().ToUpper(), Convert.ToInt32(this.txtCantidad.Text));
+                        rpta = NReceta.Editar(Convert.ToInt32(this.txtidReceta.Text), Convert.ToInt32(this.lblCodPac.Text), this.txtMedicamento.Text.Trim().ToUpper(), this.txtPresentacion.Text.Trim().ToUpper(), this.txtDosis.Text.Trim().ToUpper(), this.txtDuracion.Text.Trim().ToUpper(), Convert.ToInt32(this.txtCantidad.Text));
 
 
 
@@ -279,13 +283,13 @@ namespace CapaPresentacion
 
                         if (this.IsNuevo)
                         {
-                            this.MensajeOk("Se Insertó de forma correcta la receta");
-                            this.OperacionInsertarReceta();
+                            this.MensajeOk("Se Insertó de forma correcta el plan terapeutico");
+                            //this.OperacionInsertarReceta();
                         }
                         else
                         {
-                            this.MensajeOk("Se Actualizó de forma correcta la receta");
-                            this.OperacionEditarReceta();
+                            this.MensajeOk("Se Actualizó de forma correcta el plan terapeutico");
+                            //this.OperacionEditarReceta();
 
                         }
 
@@ -323,7 +327,7 @@ namespace CapaPresentacion
             }
             else
             {
-                this.MensajeError("Debe de seleccionar primero la receta a Modificar");
+                this.MensajeError("Debe de seleccionar primero el plan terapeutico a Modificar");
             }
         }
 
@@ -389,9 +393,47 @@ namespace CapaPresentacion
 
         private void dataListado_DoubleClick(object sender, EventArgs e)
         {
+            int idpacienteseleccionado;
+            idpacienteseleccionado = Convert.ToInt32(this.dataListado.CurrentRow.Cells["idpaciente"].Value);
+
+
+            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            string Query = "select * from Paciente where idpaciente ='" + idpacienteseleccionado + "' ;";
+            SqlConnection conDataBase = new SqlConnection(CN);
+            SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
+            SqlDataReader myReader;
+
+            try
+            {
+
+                conDataBase.Open();
+                myReader = cmdDataBase.ExecuteReader();
+
+                while (myReader.Read())
+                {
+
+                    string nombre = myReader["nombre"].ToString();
+
+                    this.cmbPacientes.Enabled = true;
+
+                    this.cmbPacientes.Text = nombre;
+
+
+
+                }
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+
+            }
+
+
             this.txtidReceta.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["idreceta"].Value);
-            //this.txtNombrePaciente.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Paciente"].Value);
-            this.lblCodigoPaciente.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["idpaciente"].Value);
+            this.lblCodPac.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["idpaciente"].Value);
             this.txtMedicamento.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["medicamento"].Value);
             this.txtPresentacion.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["presentacion"].Value);
             this.txtDosis.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["dosis"].Value);
@@ -426,7 +468,7 @@ namespace CapaPresentacion
 
 
             SqlCmd2.Parameters.AddWithValue("@d1", DateTime.Now.ToString());
-            SqlCmd2.Parameters.AddWithValue("@d2", "Se ha registrado una nueva receta al sistema");
+            SqlCmd2.Parameters.AddWithValue("@d2", "Se ha registrado el nuevo plan terapeutico al sistema");
 
 
 
@@ -533,38 +575,8 @@ namespace CapaPresentacion
 
         private void cmbPacientes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
-            string Query = "select * from Paciente where nombre = '" + this.cmbPacientes.Text + "' ;";
-            SqlConnection conDataBase = new SqlConnection(CN);
-            SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
-            SqlDataReader myReader;
-
-            try
-            {
-
-                conDataBase.Open();
-                myReader = cmdDataBase.ExecuteReader();
-
-                while (myReader.Read())
-                {
-
-                    string idpaciente = myReader["idpaciente"].ToString();
-                    string nombre = myReader["nombre"].ToString();
-
-                    this.lblCodigoPaciente.Text = idpaciente;
 
 
-
-                }
-
-
-
-            }
-            catch (Exception ex)
-            {
-
-
-            }
         }
 
         private void btnAnular_Click(object sender, EventArgs e)
@@ -589,7 +601,7 @@ namespace CapaPresentacion
 
                             if (rpta.Equals("OK"))
                             {
-                                this.MensajeOk("Se Eliminó Correctamente La Receta");
+                                this.MensajeOk("Se Eliminó Correctamente el plan terapeutico");
                                 this.OperacionAnularReceta();
                             }
                             else
@@ -617,17 +629,68 @@ namespace CapaPresentacion
         {
             frmReporteRecetas frm = new frmReporteRecetas();
             frm.Idreceta = Convert.ToInt32(this.dataListado.CurrentRow.Cells["idreceta"].Value);
+
             frm.ShowDialog();
         }
 
+        private void cmbPacientes_SelectedValueChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void cmbPacientes_DropDownClosed(object sender, EventArgs e)
+        {
+
+            if (this.cmbPacientes.SelectedIndex == -1)
+            {
+                MessageBox.Show("Seleccione un paciente de la lista");
+            }
+            else
+            {
+                //MessageBox.Show(Convert.ToString(this.cmbPacientes.Text));
+
+                string nombrepac = this.cmbPacientes.Text;
+
+
+                string CN = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+                string Query = "select * from Paciente where nombre = '" + nombrepac + "' ;";
+                SqlConnection conDataBase = new SqlConnection(CN);
+                SqlCommand cmdDataBase = new SqlCommand(Query, conDataBase);
+                SqlDataReader myReader;
+
+                try
+                {
+
+                    conDataBase.Open();
+                    myReader = cmdDataBase.ExecuteReader();
+
+                    while (myReader.Read())
+                    {
+
+                        string idpaciente = myReader["idpaciente"].ToString();
+                        string nombre = myReader["nombre"].ToString();
+
+                        //MessageBox.Show(idpaciente);
+
+                        this.lblCodPac.Text = idpaciente;
 
 
 
+                    }
 
 
 
+                }
+                catch (Exception ex)
+                {
 
 
-        
+                }
+
+
+            }
+        }
     }
+    
 }

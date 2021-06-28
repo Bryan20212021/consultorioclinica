@@ -35,6 +35,19 @@ namespace CapaPresentacion
 
             }
 
+            if (this.lblAcceso.Text == "Asistente")
+            {
+                this.btnPacientes.Enabled = true;
+                this.btnUsuarios.Enabled = false;
+                this.btnCitas.Enabled = true;
+                this.btnHistorias.Enabled = false;
+                this.btnServicios.Enabled = false;
+                this.btnDiagnosticos.Enabled = false;
+                this.btnRecetas.Enabled = false;
+                this.btnPlanEstudios.Enabled = false;
+                this.btnOperaciones.Enabled = false;
+
+            }
 
 
             else
@@ -181,8 +194,14 @@ namespace CapaPresentacion
 
         }
 
+        private void btnPlanEstudios_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new frmPlanEstudio());
+        }
 
+        private void lblAcceso_Click(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

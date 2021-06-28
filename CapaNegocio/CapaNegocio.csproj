@@ -43,6 +43,7 @@
     <Compile Include="NDiagnostico.cs" />
     <Compile Include="NOperacion.cs" />
     <Compile Include="NPacientes.cs" />
+    <Compile Include="NPlanEstudio.cs" />
     <Compile Include="NReceta.cs" />
     <Compile Include="NServicio.cs" />
     <Compile Include="NUsuario.cs" />

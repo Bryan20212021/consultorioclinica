@@ -592,7 +592,7 @@
             this.Controls.Add(this.lblhora);
             this.Controls.Add(this.label15);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "InicioResumen";
             this.Text = "InicioResumen";
             this.Load += new System.EventHandler(this.InicioResumen_Load);
