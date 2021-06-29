@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 using System.Runtime.InteropServices;
 
@@ -184,6 +185,40 @@ namespace CapaPresentacion
 
         private void button7_Click(object sender, EventArgs e)
         {
+
+            //registro de la operacion Cerrar sesion
+            string rpta2 = "";
+
+
+            SqlConnection SqlCon2 = new SqlConnection();
+
+
+
+
+            SqlCon2.ConnectionString = "Data Source=MIRLU\\SQLEXPRESS; Initial Catalog=dbclinica; Integrated Security=true";
+            SqlCon2.Open();
+
+            SqlCommand SqlCmd2 = new SqlCommand();
+            SqlCmd2.Connection = SqlCon2;
+            SqlCmd2.CommandText = "insert into Operacion (fecha, descripcion) values (@d1,@d2)";
+
+
+
+
+
+            SqlCmd2.Parameters.AddWithValue("@d1", DateTime.Now.ToString());
+            SqlCmd2.Parameters.AddWithValue("@d2", "El usuario " + this.lblnombreusuario.Text + " ha cerrado sesión. ");
+
+
+
+
+
+            //Ejecutamos nuestro comando
+
+            rpta2 = SqlCmd2.ExecuteNonQuery() == 1 ? "OK" : "NO se Ingreso el Registro";
+
+
+
             this.Hide();
             frmLogin login = new frmLogin();
             login.Show();

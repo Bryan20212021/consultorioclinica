@@ -51,6 +51,8 @@ namespace CapaPresentacion
             LblHora.Text = DateTime.Now.ToString();
         }
 
+     
+
         private void btnminimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;

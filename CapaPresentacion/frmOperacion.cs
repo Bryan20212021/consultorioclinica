@@ -38,8 +38,12 @@ namespace CapaPresentacion
             this.Mostrar();
             this.lblNombreUsuario.Hide();
             this.txtNombre.Hide();
+
             this.lblFecha.Hide();
             this.dtpFecha.Hide();
+
+            this.lblSuceso.Hide();
+            this.cbSuceso.Hide();
         }
 
         //Método Mostrar
@@ -84,6 +88,9 @@ namespace CapaPresentacion
                 this.lblFecha.Hide();
                 this.dtpFecha.Hide();
 
+                this.lblSuceso.Hide();
+                this.cbSuceso.Hide();
+
                 this.BuscarSegunNombreUsuario();
             }
             else if (this.cblBusqueda.Text.Equals("Fecha"))
@@ -94,7 +101,23 @@ namespace CapaPresentacion
                 this.lblNombreUsuario.Hide();
                 this.txtNombre.Hide();
 
+                this.lblSuceso.Hide();
+                this.cbSuceso.Hide();
+
                 this.BuscarSegunFecha();
+            }
+            else if (this.cblBusqueda.Text.Equals("Suceso"))
+            {
+                this.lblSuceso.Show();
+                this.cbSuceso.Show();
+
+                this.lblNombreUsuario.Hide();
+                this.txtNombre.Hide();
+
+                this.lblFecha.Hide();
+                this.dtpFecha.Hide();
+
+                this.BuscarSegunSuceso();
             }
         }
 
@@ -117,6 +140,19 @@ namespace CapaPresentacion
         {
             DataView DV = new DataView(NOperacion.Mostrar());
             DV.RowFilter = string.Format("fecha LIKE '%{0}%'", this.dtpFecha.Text);
+            datalistadoOperaciones.DataSource = DV;
+
+
+            lblCantidadOperaciones.Text = "Total de Operaciones: " + Convert.ToString(datalistadoOperaciones.Rows.Count);
+
+        }
+
+        //Método BuscarSegunSuceso
+        private void BuscarSegunSuceso()
+        {
+
+            DataView DV = new DataView(NOperacion.Mostrar());
+            DV.RowFilter = string.Format("descripcion LIKE '%{0}%'", this.cbSuceso.Text);
             datalistadoOperaciones.DataSource = DV;
 
 
@@ -149,6 +185,24 @@ namespace CapaPresentacion
                 this.txtNombre.Hide();
 
                 this.BuscarSegunFecha();
+            }
+        }
+
+
+        private void cbSuceso_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.cblBusqueda.Text.Equals("Suceso"))
+            {
+                this.lblSuceso.Show();
+                this.cbSuceso.Show();
+
+                this.lblFecha.Hide();
+                this.dtpFecha.Hide();
+
+                this.lblNombreUsuario.Hide();
+                this.txtNombre.Hide();
+
+                this.BuscarSegunSuceso();
             }
         }
     }

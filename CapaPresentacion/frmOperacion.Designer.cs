@@ -43,8 +43,8 @@
             this.cblBusqueda = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblSuceso = new System.Windows.Forms.Label();
+            this.cbSuceso = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistadoOperaciones)).BeginInit();
             this.SuspendLayout();
@@ -71,7 +71,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(519, 60);
             this.label12.TabIndex = 7;
-            this.label12.Text = "Historial De Operaciones";
+            this.label12.Text = "Registro de Accesos";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
@@ -91,6 +91,7 @@
             this.datalistadoOperaciones.AllowUserToAddRows = false;
             this.datalistadoOperaciones.AllowUserToDeleteRows = false;
             this.datalistadoOperaciones.AllowUserToOrderColumns = true;
+            this.datalistadoOperaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datalistadoOperaciones.BackgroundColor = System.Drawing.Color.White;
             this.datalistadoOperaciones.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -112,7 +113,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.datalistadoOperaciones.DefaultCellStyle = dataGridViewCellStyle2;
             this.datalistadoOperaciones.GridColor = System.Drawing.Color.DarkCyan;
-            this.datalistadoOperaciones.Location = new System.Drawing.Point(354, 209);
+            this.datalistadoOperaciones.Location = new System.Drawing.Point(329, 209);
             this.datalistadoOperaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datalistadoOperaciones.MultiSelect = false;
             this.datalistadoOperaciones.Name = "datalistadoOperaciones";
@@ -132,15 +133,16 @@
             this.datalistadoOperaciones.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.datalistadoOperaciones.RowTemplate.Height = 24;
             this.datalistadoOperaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datalistadoOperaciones.Size = new System.Drawing.Size(700, 510);
+            this.datalistadoOperaciones.Size = new System.Drawing.Size(1095, 645);
             this.datalistadoOperaciones.TabIndex = 153;
             // 
             // lblCantidadOperaciones
             // 
+            this.lblCantidadOperaciones.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCantidadOperaciones.AutoSize = true;
             this.lblCantidadOperaciones.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
             this.lblCantidadOperaciones.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lblCantidadOperaciones.Location = new System.Drawing.Point(979, 175);
+            this.lblCantidadOperaciones.Location = new System.Drawing.Point(929, 175);
             this.lblCantidadOperaciones.Name = "lblCantidadOperaciones";
             this.lblCantidadOperaciones.Size = new System.Drawing.Size(75, 32);
             this.lblCantidadOperaciones.TabIndex = 152;
@@ -182,6 +184,7 @@
             // cblBusqueda
             // 
             this.cblBusqueda.BackColor = System.Drawing.SystemColors.Control;
+            this.cblBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cblBusqueda.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
             this.cblBusqueda.ForeColor = System.Drawing.Color.DarkCyan;
             this.cblBusqueda.FormattingEnabled = true;
@@ -194,7 +197,6 @@
             this.cblBusqueda.Name = "cblBusqueda";
             this.cblBusqueda.Size = new System.Drawing.Size(160, 40);
             this.cblBusqueda.TabIndex = 195;
-            this.cblBusqueda.Text = "Nombre";
             this.cblBusqueda.SelectedIndexChanged += new System.EventHandler(this.cblBusqueda_SelectedIndexChanged);
             // 
             // label2
@@ -210,7 +212,7 @@
             // 
             // dtpFecha
             // 
-            this.dtpFecha.CustomFormat = "d/M/yyyy";
+            this.dtpFecha.CustomFormat = "d/MM/yyyy";
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFecha.Location = new System.Drawing.Point(31, 327);
             this.dtpFecha.Name = "dtpFecha";
@@ -218,42 +220,44 @@
             this.dtpFecha.TabIndex = 197;
             this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
-            // label1
+            // lblSuceso
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
-            this.label1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label1.Location = new System.Drawing.Point(25, 361);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 32);
-            this.label1.TabIndex = 198;
-            this.label1.Text = "Suceso:";
+            this.lblSuceso.AutoSize = true;
+            this.lblSuceso.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
+            this.lblSuceso.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lblSuceso.Location = new System.Drawing.Point(25, 361);
+            this.lblSuceso.Name = "lblSuceso";
+            this.lblSuceso.Size = new System.Drawing.Size(90, 32);
+            this.lblSuceso.TabIndex = 198;
+            this.lblSuceso.Text = "Suceso:";
             // 
-            // comboBox1
+            // cbSuceso
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
-            this.comboBox1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Iniciar sesion.",
-            "Cerrar sesion.",
-            "Creación de registro.",
-            "Edición de registro.",
-            "Anulación de registro."});
-            this.comboBox1.Location = new System.Drawing.Point(31, 397);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(275, 40);
-            this.comboBox1.TabIndex = 199;
+            this.cbSuceso.BackColor = System.Drawing.SystemColors.Control;
+            this.cbSuceso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSuceso.Font = new System.Drawing.Font("Segoe UI Light", 14.25F);
+            this.cbSuceso.ForeColor = System.Drawing.Color.DarkCyan;
+            this.cbSuceso.FormattingEnabled = true;
+            this.cbSuceso.Items.AddRange(new object[] {
+            "accedido al sistema",
+            "cerrado sesión",
+            "registrado",
+            "se editó",
+            "se anuló"});
+            this.cbSuceso.Location = new System.Drawing.Point(31, 397);
+            this.cbSuceso.Margin = new System.Windows.Forms.Padding(4);
+            this.cbSuceso.Name = "cbSuceso";
+            this.cbSuceso.Size = new System.Drawing.Size(275, 40);
+            this.cbSuceso.TabIndex = 199;
+            this.cbSuceso.SelectedIndexChanged += new System.EventHandler(this.cbSuceso_SelectedIndexChanged);
             // 
             // frmOperacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1436, 865);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbSuceso);
+            this.Controls.Add(this.lblSuceso);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cblBusqueda);
@@ -288,7 +292,7 @@
         private System.Windows.Forms.ComboBox cblBusqueda;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblSuceso;
+        private System.Windows.Forms.ComboBox cbSuceso;
     }
 }
