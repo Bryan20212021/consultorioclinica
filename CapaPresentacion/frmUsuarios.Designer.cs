@@ -87,7 +87,7 @@
             this.panel3.Controls.Add(this.label13);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1916, 70);
             this.panel3.TabIndex = 174;
@@ -102,7 +102,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(519, 60);
             this.label12.TabIndex = 7;
-            this.label12.Text = "Mantenimiento de Usuarios";
+            this.label12.Text = "Usuarios";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
@@ -139,7 +139,7 @@
             this.btnAnular.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnAnular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAnular.Location = new System.Drawing.Point(1299, 918);
-            this.btnAnular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnular.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnular.Name = "btnAnular";
             this.btnAnular.Size = new System.Drawing.Size(165, 55);
             this.btnAnular.TabIndex = 172;
@@ -157,7 +157,7 @@
             this.btnBuscar.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.Location = new System.Drawing.Point(1684, 338);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(165, 55);
             this.btnBuscar.TabIndex = 171;
@@ -175,7 +175,7 @@
             this.btnCancelar.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(101, 694);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(165, 64);
             this.btnCancelar.TabIndex = 170;
@@ -193,7 +193,7 @@
             this.btnGuardar.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(101, 623);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(165, 64);
             this.btnGuardar.TabIndex = 169;
@@ -211,7 +211,7 @@
             this.btnEditar.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.Location = new System.Drawing.Point(101, 556);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(165, 59);
             this.btnEditar.TabIndex = 168;
@@ -229,7 +229,7 @@
             this.btnNuevo.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.Location = new System.Drawing.Point(101, 492);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(165, 55);
             this.btnNuevo.TabIndex = 167;
@@ -242,7 +242,7 @@
             this.txtClave.BackColor = System.Drawing.SystemColors.Control;
             this.txtClave.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtClave.Location = new System.Drawing.Point(935, 282);
-            this.txtClave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClave.Margin = new System.Windows.Forms.Padding(4);
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(210, 22);
             this.txtClave.TabIndex = 166;
@@ -265,7 +265,7 @@
             this.txtLogin.BackColor = System.Drawing.SystemColors.Control;
             this.txtLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLogin.Location = new System.Drawing.Point(496, 279);
-            this.txtLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLogin.Margin = new System.Windows.Forms.Padding(4);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(142, 22);
             this.txtLogin.TabIndex = 164;
@@ -292,7 +292,7 @@
             "Nombre",
             "Cargo"});
             this.cblBusqueda.Location = new System.Drawing.Point(736, 434);
-            this.cblBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cblBusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.cblBusqueda.Name = "cblBusqueda";
             this.cblBusqueda.Size = new System.Drawing.Size(160, 40);
             this.cblBusqueda.TabIndex = 161;
@@ -429,7 +429,7 @@
             "Secretaria",
             "Medico"});
             this.cmbAcceso.Location = new System.Drawing.Point(1357, 178);
-            this.cmbAcceso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbAcceso.Margin = new System.Windows.Forms.Padding(4);
             this.cmbAcceso.Name = "cmbAcceso";
             this.cmbAcceso.Size = new System.Drawing.Size(160, 40);
             this.cmbAcceso.TabIndex = 158;
@@ -440,7 +440,7 @@
             this.txtEspecialidad.BackColor = System.Drawing.SystemColors.Control;
             this.txtEspecialidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEspecialidad.Location = new System.Drawing.Point(935, 233);
-            this.txtEspecialidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEspecialidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtEspecialidad.Name = "txtEspecialidad";
             this.txtEspecialidad.Size = new System.Drawing.Size(210, 22);
             this.txtEspecialidad.TabIndex = 155;
@@ -462,7 +462,7 @@
             this.txtCargo.BackColor = System.Drawing.SystemColors.Control;
             this.txtCargo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCargo.Location = new System.Drawing.Point(935, 180);
-            this.txtCargo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCargo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(210, 22);
             this.txtCargo.TabIndex = 152;
@@ -484,7 +484,7 @@
             this.txtNombreUsuario.BackColor = System.Drawing.SystemColors.Control;
             this.txtNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombreUsuario.Location = new System.Drawing.Point(496, 230);
-            this.txtNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
             this.txtNombreUsuario.Size = new System.Drawing.Size(142, 22);
             this.txtNombreUsuario.TabIndex = 149;
@@ -507,7 +507,7 @@
             this.txtCodigoUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodigoUsuario.Enabled = false;
             this.txtCodigoUsuario.Location = new System.Drawing.Point(496, 180);
-            this.txtCodigoUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigoUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoUsuario.Name = "txtCodigoUsuario";
             this.txtCodigoUsuario.Size = new System.Drawing.Size(142, 22);
             this.txtCodigoUsuario.TabIndex = 147;
@@ -534,7 +534,7 @@
             "Activo",
             "Inactivo"});
             this.cmbEstado.Location = new System.Drawing.Point(1357, 233);
-            this.cmbEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbEstado.Margin = new System.Windows.Forms.Padding(4);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(160, 40);
             this.cmbEstado.TabIndex = 175;
@@ -576,7 +576,7 @@
             this.Controls.Add(this.txtCodigoUsuario);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmUsuarios";
             this.Text = "frmUsuarios";
             this.Load += new System.EventHandler(this.frmUsuarios_Load);

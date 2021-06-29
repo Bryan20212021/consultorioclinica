@@ -100,7 +100,7 @@
             this.panel3.Controls.Add(this.label18);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1475, 76);
             this.panel3.TabIndex = 197;
@@ -114,7 +114,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(519, 60);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Mantenimiento De Pacientes";
+            this.label1.Text = "Pacientes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label18
@@ -139,7 +139,7 @@
             this.btnNuevo.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.Location = new System.Drawing.Point(152, 468);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(121, 43);
             this.btnNuevo.TabIndex = 196;
@@ -157,7 +157,7 @@
             this.btnAnular.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnAnular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAnular.Location = new System.Drawing.Point(1197, 628);
-            this.btnAnular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnular.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnular.Name = "btnAnular";
             this.btnAnular.Size = new System.Drawing.Size(121, 43);
             this.btnAnular.TabIndex = 195;
@@ -175,7 +175,7 @@
             "Nombre",
             "Documento"});
             this.cblBusqueda.Location = new System.Drawing.Point(803, 526);
-            this.cblBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cblBusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.cblBusqueda.Name = "cblBusqueda";
             this.cblBusqueda.Size = new System.Drawing.Size(160, 40);
             this.cblBusqueda.TabIndex = 194;
@@ -290,7 +290,7 @@
             this.btnCancelar.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(555, 468);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(121, 43);
             this.btnCancelar.TabIndex = 189;
@@ -308,7 +308,7 @@
             this.btnEditar.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.Location = new System.Drawing.Point(413, 468);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(121, 43);
             this.btnEditar.TabIndex = 188;
@@ -326,7 +326,7 @@
             this.btnBuscar.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.Location = new System.Drawing.Point(1197, 574);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(121, 43);
             this.btnBuscar.TabIndex = 187;
@@ -344,7 +344,7 @@
             this.btnGuardar.ForeColor = System.Drawing.Color.DarkCyan;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(283, 468);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(121, 43);
             this.btnGuardar.TabIndex = 162;
@@ -356,7 +356,7 @@
             // 
             this.txtTelefono.BackColor = System.Drawing.SystemColors.Control;
             this.txtTelefono.Location = new System.Drawing.Point(1053, 421);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Mask = "(####).###.####";
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(143, 22);
@@ -367,7 +367,7 @@
             // 
             this.txtNumero_Documento.BackColor = System.Drawing.SystemColors.Control;
             this.txtNumero_Documento.Location = new System.Drawing.Point(712, 235);
-            this.txtNumero_Documento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumero_Documento.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumero_Documento.Mask = "##.###.###";
             this.txtNumero_Documento.Name = "txtNumero_Documento";
             this.txtNumero_Documento.Size = new System.Drawing.Size(143, 22);
@@ -588,7 +588,7 @@
             // 
             this.dtpFecha_Nacimiento.CustomFormat = "";
             this.dtpFecha_Nacimiento.Location = new System.Drawing.Point(373, 278);
-            this.dtpFecha_Nacimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFecha_Nacimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFecha_Nacimiento.Name = "dtpFecha_Nacimiento";
             this.dtpFecha_Nacimiento.Size = new System.Drawing.Size(264, 22);
             this.dtpFecha_Nacimiento.TabIndex = 164;
@@ -731,7 +731,7 @@
             this.Controls.Add(this.cblEstado_Civil);
             this.Controls.Add(this.label11);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPaciente";
             this.Text = "frmPaciente";
             this.Load += new System.EventHandler(this.frmPaciente_Load);

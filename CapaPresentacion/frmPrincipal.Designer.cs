@@ -90,7 +90,7 @@
             this.MenuVertical.Margin = new System.Windows.Forms.Padding(4);
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(333, 938);
-            this.MenuVertical.TabIndex = 1;
+            this.MenuVertical.TabIndex = 0;
             // 
             // btnPlanEstudios
             // 
@@ -105,7 +105,7 @@
             this.btnPlanEstudios.Margin = new System.Windows.Forms.Padding(4);
             this.btnPlanEstudios.Name = "btnPlanEstudios";
             this.btnPlanEstudios.Size = new System.Drawing.Size(333, 49);
-            this.btnPlanEstudios.TabIndex = 35;
+            this.btnPlanEstudios.TabIndex = 6;
             this.btnPlanEstudios.Text = "     Plan de Estudios";
             this.btnPlanEstudios.UseVisualStyleBackColor = true;
             this.btnPlanEstudios.Click += new System.EventHandler(this.btnPlanEstudios_Click);
@@ -147,7 +147,7 @@
             this.btnOperaciones.Margin = new System.Windows.Forms.Padding(4);
             this.btnOperaciones.Name = "btnOperaciones";
             this.btnOperaciones.Size = new System.Drawing.Size(333, 49);
-            this.btnOperaciones.TabIndex = 33;
+            this.btnOperaciones.TabIndex = 8;
             this.btnOperaciones.Text = "Operaciones";
             this.btnOperaciones.UseVisualStyleBackColor = true;
             this.btnOperaciones.Click += new System.EventHandler(this.btnOperaciones_Click);
@@ -165,7 +165,7 @@
             this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(333, 49);
-            this.button7.TabIndex = 32;
+            this.button7.TabIndex = 9;
             this.button7.Text = "Salir";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -183,7 +183,7 @@
             this.btnHistorias.Margin = new System.Windows.Forms.Padding(4);
             this.btnHistorias.Name = "btnHistorias";
             this.btnHistorias.Size = new System.Drawing.Size(333, 49);
-            this.btnHistorias.TabIndex = 31;
+            this.btnHistorias.TabIndex = 7;
             this.btnHistorias.Text = "     Historias Medicas";
             this.btnHistorias.UseVisualStyleBackColor = true;
             this.btnHistorias.Click += new System.EventHandler(this.btnHistorias_Click);
@@ -201,7 +201,7 @@
             this.btnRecetas.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecetas.Name = "btnRecetas";
             this.btnRecetas.Size = new System.Drawing.Size(333, 49);
-            this.btnRecetas.TabIndex = 29;
+            this.btnRecetas.TabIndex = 5;
             this.btnRecetas.Text = "     Plan Terapeutico";
             this.btnRecetas.UseVisualStyleBackColor = true;
             this.btnRecetas.Click += new System.EventHandler(this.btnRecetas_Click);
@@ -219,7 +219,7 @@
             this.btnDiagnosticos.Margin = new System.Windows.Forms.Padding(4);
             this.btnDiagnosticos.Name = "btnDiagnosticos";
             this.btnDiagnosticos.Size = new System.Drawing.Size(333, 49);
-            this.btnDiagnosticos.TabIndex = 28;
+            this.btnDiagnosticos.TabIndex = 4;
             this.btnDiagnosticos.Text = "Diagnosticos";
             this.btnDiagnosticos.UseVisualStyleBackColor = true;
             this.btnDiagnosticos.Click += new System.EventHandler(this.btnDiagnosticos_Click);
@@ -237,7 +237,7 @@
             this.btnServicios.Margin = new System.Windows.Forms.Padding(4);
             this.btnServicios.Name = "btnServicios";
             this.btnServicios.Size = new System.Drawing.Size(333, 49);
-            this.btnServicios.TabIndex = 27;
+            this.btnServicios.TabIndex = 3;
             this.btnServicios.Text = "Servicios";
             this.btnServicios.UseVisualStyleBackColor = true;
             this.btnServicios.Click += new System.EventHandler(this.btnServicios_Click);
@@ -255,7 +255,7 @@
             this.btnCitas.Margin = new System.Windows.Forms.Padding(4);
             this.btnCitas.Name = "btnCitas";
             this.btnCitas.Size = new System.Drawing.Size(333, 49);
-            this.btnCitas.TabIndex = 26;
+            this.btnCitas.TabIndex = 2;
             this.btnCitas.Text = "Citas Medicas";
             this.btnCitas.UseVisualStyleBackColor = true;
             this.btnCitas.Click += new System.EventHandler(this.btnCitas_Click);
@@ -273,7 +273,7 @@
             this.btnUsuarios.Margin = new System.Windows.Forms.Padding(4);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(333, 49);
-            this.btnUsuarios.TabIndex = 25;
+            this.btnUsuarios.TabIndex = 1;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = true;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
@@ -291,7 +291,7 @@
             this.btnPacientes.Margin = new System.Windows.Forms.Padding(4);
             this.btnPacientes.Name = "btnPacientes";
             this.btnPacientes.Size = new System.Drawing.Size(333, 49);
-            this.btnPacientes.TabIndex = 24;
+            this.btnPacientes.TabIndex = 0;
             this.btnPacientes.Text = "Pacientes";
             this.btnPacientes.UseVisualStyleBackColor = true;
             this.btnPacientes.Click += new System.EventHandler(this.btnPacientes_Click);
@@ -375,7 +375,7 @@
             this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1609, 55);
-            this.BarraTitulo.TabIndex = 2;
+            this.BarraTitulo.TabIndex = 1;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
             // iconminimizar
@@ -457,7 +457,7 @@
             this.panelContenedor.Margin = new System.Windows.Forms.Padding(4);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1609, 883);
-            this.panelContenedor.TabIndex = 3;
+            this.panelContenedor.TabIndex = 2;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // frmPrincipal

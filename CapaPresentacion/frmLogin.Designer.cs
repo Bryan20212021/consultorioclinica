@@ -92,7 +92,7 @@
             this.BtnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(237, 43);
-            this.BtnSalir.TabIndex = 109;
+            this.BtnSalir.TabIndex = 3;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = false;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
@@ -106,7 +106,7 @@
             this.chkRevelarClave.Margin = new System.Windows.Forms.Padding(4);
             this.chkRevelarClave.Name = "chkRevelarClave";
             this.chkRevelarClave.Size = new System.Drawing.Size(172, 36);
-            this.chkRevelarClave.TabIndex = 108;
+            this.chkRevelarClave.TabIndex = 4;
             this.chkRevelarClave.Text = "Revelar Clave";
             this.chkRevelarClave.UseVisualStyleBackColor = true;
             this.chkRevelarClave.CheckedChanged += new System.EventHandler(this.chkRevelarClave_CheckedChanged);
@@ -124,7 +124,7 @@
             this.btnlogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(299, 43);
-            this.btnlogin.TabIndex = 107;
+            this.btnlogin.TabIndex = 2;
             this.btnlogin.Text = "Acceder";
             this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
@@ -139,7 +139,7 @@
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(543, 32);
-            this.txtPassword.TabIndex = 104;
+            this.txtPassword.TabIndex = 1;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUsuario
@@ -152,7 +152,7 @@
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(543, 32);
-            this.txtUsuario.TabIndex = 103;
+            this.txtUsuario.TabIndex = 0;
             // 
             // panel1
             // 
