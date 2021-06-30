@@ -169,6 +169,22 @@ namespace CapaPresentacion
             lblTotal.Text = "Total de Usuarios: " + Convert.ToString(dataListado.Rows.Count);
         }
 
+        private void BuscarAcceso()
+        {
+
+            /*DataView DV = new DataView(dbdataset);
+            DV.RowFilter = string.Format("cargo LIKE '%{0}%'", this.txtBuscar.Text);
+            dataListado.DataSource = DV;*/
+
+            this.dataListado.DataSource = NUsuario.BuscarAcceso(this.txtBuscar.Text);
+            this.OcultarColumnas();
+
+
+
+
+            lblTotal.Text = "Total de Usuarios: " + Convert.ToString(dataListado.Rows.Count);
+        }
+
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             this.IsNuevo = true;
@@ -399,6 +415,10 @@ namespace CapaPresentacion
             {
                 this.BuscarCargo();
             }
+            else if (this.cblBusqueda.Text.Equals("Nivel Acceso"))
+            {
+                this.BuscarAcceso();
+            }
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -628,12 +648,10 @@ namespace CapaPresentacion
 
         }
 
-        
+        private void cblBusqueda_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-
-
-
-
+        }
     }
 
 

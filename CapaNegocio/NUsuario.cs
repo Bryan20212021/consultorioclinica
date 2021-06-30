@@ -104,5 +104,14 @@ namespace CapaNegocio
             Obj.TextoBuscar = textobuscar;
             return Obj.BuscarCargo(Obj);
         }
+
+        public static DataTable BuscarAcceso(string textobuscar)
+        {
+            DUsuario Obj = new DUsuario();
+            Obj.TextoBuscar = textobuscar;
+            return Obj.BuscarAcceso(Obj);
+        }
+
+
     }
 }

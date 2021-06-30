@@ -51,7 +51,19 @@ namespace CapaPresentacion
             LblHora.Text = DateTime.Now.ToString();
         }
 
-     
+        private void lblRecuperarPassword_Click(object sender, EventArgs e)
+        {
+            //codigo para recuperar contraseña
+
+            //abrir un form con 3 txtbox con 3 lbls con las preguntas de seguridad
+
+            frmRecuperarContrasena frm = frmRecuperarContrasena.GetInstancia();
+            frm.Show();
+
+
+            //si coinciden, debe abrir otro form para guardar la contraseña nueva
+            //debe devolver al login
+        }
 
         private void btnminimizar_Click(object sender, EventArgs e)
         {
