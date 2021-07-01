@@ -80,6 +80,12 @@
     <Compile Include="frmDiagnostico.Designer.cs">
       <DependentUpon>frmDiagnostico.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEditarContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarContrasena.Designer.cs">
+      <DependentUpon>frmEditarContrasena.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHistoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDiagnostico.resx">
       <DependentUpon>frmDiagnostico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarContrasena.resx">
+      <DependentUpon>frmEditarContrasena.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHistoria.resx">
       <DependentUpon>frmHistoria.cs</DependentUpon>

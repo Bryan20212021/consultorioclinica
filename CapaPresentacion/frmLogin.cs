@@ -14,7 +14,22 @@ namespace CapaPresentacion
     public partial class frmLogin : Form
     {
 
+        private static frmLogin _instancia;
+
+        public static frmLogin GetInstancia()
+        {
+            if (_instancia == null)
+            {
+                _instancia = new frmLogin();
+            }
+            return _instancia;
+        }
+
+
         string idusuario, login, clave, acceso, nombre;
+
+
+
 
 
         public frmLogin()
@@ -53,6 +68,8 @@ namespace CapaPresentacion
 
         private void lblRecuperarPassword_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            
             //codigo para recuperar contraseña
 
             //abrir un form con 3 txtbox con 3 lbls con las preguntas de seguridad

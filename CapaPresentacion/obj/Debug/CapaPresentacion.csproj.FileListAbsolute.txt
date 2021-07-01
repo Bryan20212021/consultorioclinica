@@ -76,3 +76,4 @@ C:\Users\Usuario\Desktop\consultorioclinica\CapaPresentacion\obj\Debug\CapaPrese
 C:\Users\Usuario\Desktop\consultorioclinica\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\Usuario\Desktop\consultorioclinica\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\Usuario\Desktop\consultorioclinica\CapaPresentacion\obj\Debug\CapaPresentacion.frmRecuperarContrasena.resources
+C:\Users\Usuario\Desktop\consultorioclinica\CapaPresentacion\obj\Debug\CapaPresentacion.frmEditarContrasena.resources
